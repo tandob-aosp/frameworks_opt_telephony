@@ -590,7 +590,7 @@ public class DctController extends Handler {
         return phoneId;
     }
 
-    private void onSubInfoReady() {
+    protected void onSubInfoReady() {
         logd("onSubInfoReady mPhoneNum=" + mPhoneNum);
         for (int i = 0; i < mPhoneNum; ++i) {
             int subId = mPhones[i].getSubId();
